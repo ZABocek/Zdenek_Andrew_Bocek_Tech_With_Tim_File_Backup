@@ -4,7 +4,7 @@ import datetime
 import schedule
 import time
 
-source_dir = "C:/Users/zaboc/Pictures/Screenshots"
+source_dir = "C:\Users\zaboc\OneDrive\Pictures\Screenshots"
 destination_dir = "C:/Users/zaboc/Desktop/Backups"
 
 def copy_folder_to_directory(source, dest):
