@@ -1,10 +1,10 @@
+import schedule
+import time
 import os
 import shutil
 import datetime
-import schedule
-import time
 
-source_dir = "C:\Users\zaboc\OneDrive\Pictures\Screenshots"
+source_dir = r"C:\Users\zaboc\OneDrive\Pictures\Screenshots"
 destination_dir = "C:/Users/zaboc/Desktop/Backups"
 
 def copy_folder_to_directory(source, dest):
@@ -17,6 +17,6 @@ def copy_folder_to_directory(source, dest):
     except FileExistsError:
         print(f"Folder already exists in: {dest}")
         
-#schedule.every().day.at("5:00").do(copy_folder_to_directory)
-
 copy_folder_to_directory(source_dir, destination_dir)
+
+#schedule.every().day.at("5:00").do(copy_folder_to_directory)
